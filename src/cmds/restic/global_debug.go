@@ -55,7 +55,7 @@ func runDebug() error {
 
 	if memProfilePath != "" {
 		prof = profile.Start(profile.Quiet, profile.MemProfile, profile.ProfilePath(memProfilePath))
-	} else if memProfilePath != "" {
+	} else if cpuProfilePath != "" {
 		prof = profile.Start(profile.Quiet, profile.CPUProfile, profile.ProfilePath(memProfilePath))
 	}
 
